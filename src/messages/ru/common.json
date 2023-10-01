@@ -1,0 +1,35 @@
+{
+  "mainName": "Junge Stimmen",
+  "menu": {
+    "home": "Главная",
+    "schedule": "Афиша",
+    "about": "О коллективе",
+    "video": "Видео",
+    "audio": "Аудио",
+    "gallery": "Фотогалерея",
+    "contactUs": "Контакты"
+  },
+  "footer": {
+    "contacts": {
+      "title": "Контактная информация",
+      "name": "Руководитель\nЕрастова Елена Васильевна",
+      "phone": "8-905-86-40-555",
+      "email": "eve2a7@mail.ru"
+    },
+    "partners": {
+      "title": "Наши партнеры",
+      "pstu": "Пермский Политех",
+      "dom": "Пространство ДОМ",
+      "library": "Библиотека им. Пушкина"
+    },
+    "social": {
+      "title": "Мы в социальных сетях",
+      "vk": "Вконтакте",
+      "youtube": "YouTube"
+    }
+  },
+  "localeSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, ru {Rus} en {Eng} other {Unknown}}"
+  }
+}
