@@ -27,7 +27,32 @@ body {
 }
 
 h1, h2, h3 {
-  @apply font-headers;
+  @apply font-headers text-black;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 4.88889rem;
+  line-height: 4.88889rem;
+}
+
+h2 {
+  font-size: 3.55556rem;
+  line-height: 3.55556rem;
+  letter-spacing: 0.17778rem;
+}
+
+h3 {
+  font-size: 2.33333rem;
+}
+
+h4 {
+  font-size: 1.77778rem;
+}
+
+h5 {
+  font-size: 1.33333rem;
+  letter-spacing: 0.06667rem;
 }
 
 /* NavBar */

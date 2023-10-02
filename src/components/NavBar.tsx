@@ -1,3 +1,4 @@
+"use client";
 import Logo from "@/components/Logo";
 import useScroll from "@/lib/hooks/use-scroll";
 import { useTranslations } from "next-intl";
@@ -9,13 +10,13 @@ export default function NavBar() {
   const scrolled = useScroll(50);
   const t = useTranslations("menu");
 
+  // scrolled
+  // ? "border-b border-gray-200 bg-white/50 backdrop-blur-xl"
+  // : "bg-white/0"
+
   return (
     <header
-      className={`w-full flex justify-center items-center ${
-        scrolled
-          ? "border-b border-gray-200 bg-white/50 backdrop-blur-xl"
-          : "bg-white/0"
-      } z-30 transition-all`}
+      className={`w-full flex justify-center items-center bg-white/0 z-30 transition-all`}
     >
       <Logo />
       <nav className="w-full">
@@ -61,8 +62,8 @@ export default function NavBar() {
         <LocaleSwitcher />
       </div>
       <div className="flex">
-        <Image src="/videosquare.svg" alt="youtube" width="24" height="24"/>
-        <Image src="/logo_vk.svg" alt="youtube" width="24" height="24"/>
+        <Image src="/videosquare.svg" alt="youtube" width={24} height={24} />
+        <Image src="/logo_vk.svg" alt="youtube" width={24} height={24} />
       </div>
     </header>
   );
