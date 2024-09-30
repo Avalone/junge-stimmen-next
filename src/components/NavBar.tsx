@@ -1,13 +1,13 @@
 "use client";
 import Logo from "@/components/Logo";
-import useScroll from "@/lib/hooks/use-scroll";
+// import useScroll from "@/lib/hooks/use-scroll";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import LocaleSwitcher from "@/components/LocaleSwitcher";
 import Image from "next/image";
 
 export default function NavBar() {
-  const scrolled = useScroll(50);
+  // const scrolled = useScroll(50);
   const t = useTranslations("menu");
 
   // scrolled
