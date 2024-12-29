@@ -1,14 +1,14 @@
 "use client";
 import Logo from "@/components/Logo";
-import useScroll from "@/lib/hooks/use-scroll";
+// import useScroll from "@/lib/hooks/use-scroll";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import LocaleSwitcher from "@/components/LocaleSwitcher";
 import Image from "next/image";
 
 export default function NavBar() {
-  const scrolled = useScroll(50);
-  const t = useTranslations("menu");
+  // const scrolled = useScroll(50);
+  const t = useTranslations('common');
 
   // scrolled
   // ? "border-b border-gray-200 bg-white/50 backdrop-blur-xl"
@@ -23,37 +23,37 @@ export default function NavBar() {
         <ul className="header-nav text-center leading-relaxed flex justify-start">
           <li>
             <Link href="/">
-              <p>{t("home")}</p>
+              <p>{t("menu.home")}</p>
             </Link>
           </li>
           <li>
             <Link href="/schedule">
-              <p>{t("schedule")}</p>
+              <p>{t("menu.schedule")}</p>
             </Link>
           </li>
           <li>
             <Link href="/about">
-              <p>{t("about")}</p>
+              <p>{t("menu.about")}</p>
             </Link>
           </li>
           <li>
             <Link href="/video">
-              <p>{t("video")}</p>
+              <p>{t("menu.video")}</p>
             </Link>
           </li>
           <li>
             <Link href="/audio">
-              <p>{t("audio")}</p>
+              <p>{t("menu.audio")}</p>
             </Link>
           </li>
           <li>
             <Link href="/gallery">
-              <p>{t("gallery")}</p>
+              <p>{t("menu.gallery")}</p>
             </Link>
           </li>
           <li>
             <Link href="/contactUs">
-              <p>{t("contactUs")}</p>
+              <p>{t("menu.contactUs")}</p>
             </Link>
           </li>
         </ul>

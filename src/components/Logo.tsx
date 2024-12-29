@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 
 export default function Logo() {
-  const t = useTranslations();
+  const t = useTranslations('common');
 
   return (
     <Link href="/">

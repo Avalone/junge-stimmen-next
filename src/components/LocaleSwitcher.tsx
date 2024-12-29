@@ -2,11 +2,11 @@
 
 import clsx from 'clsx';
 import {useLocale, useTranslations} from 'next-intl';
-import {usePathname, useRouter} from 'next-intl/client';
+import {usePathname, useRouter} from '@/i18n/routing';
 import {ChangeEvent, useTransition} from 'react';
 
 export default function LocaleSwitcher() {
-  const t = useTranslations('localeSwitcher');
+  const t = useTranslations('common.localeSwitcher');
   const [isPending, startTransition] = useTransition();
   const locale = useLocale();
   const router = useRouter();

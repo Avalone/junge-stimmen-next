@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export default function IndexPage() {
-  const t = useTranslations();
+  const t = useTranslations('home');
 
   return (
     <main className="pt-6 pb-6 grid grid-cols-2 grid-rows-4 gap-2">

@@ -1,14 +1,15 @@
 "use client"
-import { useTranslations } from "next-intl";
+//import { useTranslations } from "next-intl";
 import { ReactNode } from "react";
 import NavBar from "./NavBar";
 
 type Props = {
   children?: ReactNode;
+  locale: string;
 };
 
 export default function PageLayout({ children }: Props) {
-  const t = useTranslations();
+  //const t = useTranslations();
 
   return (
     <>
