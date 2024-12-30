@@ -1,5 +1,4 @@
-'use client';
-
+'use client'
 import clsx from 'clsx';
 import {useLocale, useTranslations} from 'next-intl';
 import {usePathname, useRouter} from '@/i18n/routing';

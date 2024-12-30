@@ -1,18 +1,11 @@
-"use client";
 import Logo from "@/components/Logo";
-// import useScroll from "@/lib/hooks/use-scroll";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import LocaleSwitcher from "@/components/LocaleSwitcher";
 import Image from "next/image";
 
 export default function NavBar() {
-  // const scrolled = useScroll(50);
   const t = useTranslations('common');
-
-  // scrolled
-  // ? "border-b border-gray-200 bg-white/50 backdrop-blur-xl"
-  // : "bg-white/0"
 
   return (
     <header
