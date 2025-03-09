@@ -1,5 +1,4 @@
 import {ReactNode} from 'react';
-import './styles.css';
 import './globals.css';
 
 type Props = {

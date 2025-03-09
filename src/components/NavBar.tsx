@@ -56,7 +56,7 @@ export default function NavBar() {
       </div>
       <div className="flex">
         <Image src="/videosquare.svg" alt="youtube" width={24} height={24} />
-        <Image src="/logo_vk.svg" alt="youtube" width={24} height={24} />
+        <Image src="/logo_vk.svg" alt="vk" width={24} height={24} />
       </div>
     </header>
   );
