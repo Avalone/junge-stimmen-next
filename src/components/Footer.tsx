@@ -40,11 +40,11 @@ export default function Footer() {
                 <div className="w-full md:w-1/4 mt-4 sm:mt-0">
                     <p className="mb-4">{t("social.title")}</p>
                     <div className="mb-4">
-                        <a href="#" className="flex items-center justify-center space-x-8">
+                        <a href="#" className="flex items-center justify-center space-x-8 mt-2">
                             <Image src="/logo_vk.svg" alt="vk" width={24} height={24} />
                             <p className="w-20">{t("social.vk")}</p>
                         </a>
-                        <a href="#" className="flex items-center justify-center space-x-8">
+                        <a href="#" className="flex items-center justify-center space-x-8  mt-2">
                             <Image src="/videosquare.svg" alt="youtube" width={24} height={24} />
                             <p className="w-20">{t("social.youtube")}</p>
                         </a>
