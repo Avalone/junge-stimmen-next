@@ -9,7 +9,7 @@ export default function NavBar() {
 
   return (
     <header
-      className={`w-full flex justify-center items-center bg-white/0 z-30 transition-all`}
+      className={`w-full flex justify-center items-center bg-white/0 z-30 transition-all hidden`}
     >
       <Logo />
       <nav className="w-full">

@@ -16,7 +16,7 @@ export default async function BaseLayout({children, locale}: Props) {
   const messages = await getMessages();
 
   return (
-    <html className="h-full" lang={locale}>
+    <html className="h-full w-full" lang={locale}>
       <body className={clsx('flex h-full flex-col')}>
       <NextIntlClientProvider messages={messages}>
           <NavBar/>

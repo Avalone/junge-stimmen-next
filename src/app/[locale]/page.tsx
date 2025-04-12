@@ -5,7 +5,7 @@ export default function IndexPage() {
   const t = useTranslations('home');
 
   return (
-    <main className="pt-6 pb-6 grid grid-cols-2 grid-rows-4 gap-2">
+    <main className="pt-6 pb-6 grid grid-cols-2 grid-rows-4 gap-2 hidden">
       <div>
         <header className="main-header">
           <h1>{t("title")}</h1>
