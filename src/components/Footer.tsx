@@ -22,7 +22,7 @@ export default function Footer() {
                         <div>{t("contacts.position")}</div>
                         <div>{t("contacts.name")}</div>
                     </div>
-                    <div className="flex items-center justify-center gap-2 text-gray-600">
+                    <div className="flex items-center justify-center gap-2 mt-2">
                         <Image src="/pencil-square.svg" alt="Email" width={24} height={24} />
                         <a href={mailto} className="text-blue-600">{t("contacts.email")}</a>
                     </div>
@@ -31,9 +31,9 @@ export default function Footer() {
                 <div className="hidden md:block md:w-1/4">
                     <p className="mb-4">{t("partners.title")}</p>
                     <ul>
-                        <li className="mb-2"><a href="#" className="text-blue-600">{t("partners.pstu")}</a></li>
-                        <li className="mb-2"><a href="#" className="text-blue-600">{t("partners.dom")}</a></li>
-                        <li><a href="#">{t("partners.library")}</a></li>
+                        <li className="mb-2"><a href="https://pstu.ru">{t("partners.pstu")}</a></li>
+                        <li className="mb-2"><a href="https://vk.com/prostranstvo_dom">{t("partners.dom")}</a></li>
+                        <li><a href="https://vk.com/librarypushkin">{t("partners.library")}</a></li>
                     </ul>
                 </div>
                 {/*Social Media*/}

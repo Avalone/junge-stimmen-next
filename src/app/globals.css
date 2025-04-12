@@ -67,6 +67,11 @@ h5 {
   letter-spacing: 0.07rem;
 }
 
+a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 /* NavBar */
 .header-nav > li {
   @apply font-sans text-xl ml-[42px] font-normal;
