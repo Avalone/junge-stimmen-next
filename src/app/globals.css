@@ -7,6 +7,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-rgb: 255, 255, 255;
   --links-rgb: 37, 99, 235;
+  --background-menus-rgb: 233, 250, 255;
 }
 
 @media (prefers-color-scheme: light) {
@@ -33,7 +34,7 @@ main, header, container {
 }
 
 footer {
-  background-color: #E9FAFF;
+  background-color: rgb(var(--background-menus-rgb));
 }
 
 h1, h2, h3 {
@@ -85,7 +86,7 @@ nav li > a:hover {
   text-decoration: none;
 }
 
-.header-nav > li {
+.horizontal-menu > li {
   font-family: 'Open Sans';
   font-size: 1.25rem;
   letter-spacing: 0;
@@ -93,4 +94,13 @@ nav li > a:hover {
   margin-left: 35px;
   line-height: 1.75rem;
   text-align: center;
+}
+
+.horizontal-menu > li:first-child {
+  margin-left: 0px;
+}
+
+.vertical-menu
+{
+  background-color: rgb(var(--background-menus-rgb));
 }
