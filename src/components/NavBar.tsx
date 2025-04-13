@@ -52,7 +52,7 @@ export default function NavBar() {
                     </ul>
                 </nav>
                 <div className="flex w-full justify-end items-center">
-                    <button onClick={() => setIsOpen(!isOpen)}>
+                    <button className="lg:hidden shrink-0" onClick={() => setIsOpen(!isOpen)}>
                         <Image src="/hamburger.svg" alt="menu" width={36} height={36}/>
                     </button>
                     <div className="px-2">
@@ -65,7 +65,7 @@ export default function NavBar() {
                 </div>
             </div>
             {isOpen && (
-                <nav className="vertical-menu block flex-wrap w-full mt-4">
+                <nav className="vertical-menu lg:hidden block flex-wrap w-full mt-4">
                     <ul className="flex flex-col items-center p-4 gap-2">
                         <li><Link href="/" onClick={toggleMenu}>{t("menu.home")}</Link></li>
                         <li><Link href="/schedule" onClick={toggleMenu}>{t("menu.schedule")}</Link></li>
