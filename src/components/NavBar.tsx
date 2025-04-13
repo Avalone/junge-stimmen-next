@@ -12,7 +12,7 @@ export default function NavBar() {
     const toggleMenu = () => setIsOpen(!isOpen);
 
     return (
-        <header>
+        <header className="site-header">
             <div className="w-full flex items-center bg-white/0 z-30 transition-all">
                 <div className="shrink-0">
                     <Logo className="mr-4"/>

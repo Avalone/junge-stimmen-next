@@ -46,7 +46,7 @@ export default function Footer() {
                     </ul>
                 </section>
                 {/*Social Media*/}
-                <div className="w-full md:w-1/4 mt-4 sm:mt-0">
+                <section className="w-full md:w-1/4 mt-4 sm:mt-0">
                     <p className="mb-4">{t("social.title")}</p>
                     <div className="mb-4">
                         <a href="#" className="flex items-center justify-center space-x-8 mt-2">
@@ -58,7 +58,7 @@ export default function Footer() {
                             <p className="w-20">{t("social.youtube")}</p>
                         </a>
                     </div>
-                </div>
+                </section>
             </div>
         </footer>
     );
