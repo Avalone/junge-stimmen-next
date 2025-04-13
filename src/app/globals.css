@@ -6,6 +6,7 @@
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-rgb: 255, 255, 255;
+  --links-rgb: 37, 99, 235;
 }
 
 @media (prefers-color-scheme: light) {
@@ -33,7 +34,6 @@ main, header, container {
 
 footer {
   background-color: #E9FAFF;
-  ;
 }
 
 h1, h2, h3 {
@@ -68,11 +68,29 @@ h5 {
 }
 
 a {
-  text-decoration: underline;
   cursor: pointer;
+  color: rgb(var(--links-rgb));
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /* NavBar */
+nav li > a {
+  color: rgb(var(--foreground-rgb));
+}
+
+nav li > a:hover {
+  text-decoration: none;
+}
+
 .header-nav > li {
-  @apply font-sans text-xl ml-[42px] font-normal;
+  font-family: 'Open Sans';
+  font-size: 1.25rem;
+  letter-spacing: 0;
+  font-weight: 400;
+  margin-left: 35px;
+  line-height: 1.75rem;
+  text-align: center;
 }

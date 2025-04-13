@@ -28,14 +28,23 @@ export default function Footer() {
                     </div>
                 </section>
                 {/*Partners*/}
-                <div className="hidden md:block md:w-1/4">
+                <section className="hidden md:block md:w-1/4">
                     <p className="mb-4">{t("partners.title")}</p>
                     <ul>
-                        <li className="mb-2"><a href="https://pstu.ru">{t("partners.pstu")}</a></li>
-                        <li className="mb-2"><a href="https://vk.com/prostranstvo_dom">{t("partners.dom")}</a></li>
-                        <li><a href="https://vk.com/librarypushkin">{t("partners.library")}</a></li>
+                        <li className="mb-2">
+                            <p>{t("partners.pstu")}</p>
+                            <a href="https://pstu.ru">pstu.ru</a>
+                        </li>
+                        <li className="mb-2">
+                            <p>{t("partners.dom")}</p>
+                            <a href="https://vk.com/prostranstvo_dom">vk.com/prostranstvo_dom</a>
+                        </li>
+                        <li>
+                            <p>{t("partners.library")}</p>
+                            <a href="https://vk.com/librarypushkin">vk.com/librarypushkin</a>
+                        </li>
                     </ul>
-                </div>
+                </section>
                 {/*Social Media*/}
                 <div className="w-full md:w-1/4 mt-4 sm:mt-0">
                     <p className="mb-4">{t("social.title")}</p>
