@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Open+Sans:wght@400;600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,57 +6,103 @@
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-rgb: 255, 255, 255;
+  --links-rgb: 37, 99, 235;
+  --background-menus-rgb: 233, 250, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --foreground-rgb: 0, 0, 0;
     --background-rgb: 255, 255, 255;
   }
 }
 
-/* @layer base {
+@layer base {
   html {
-    font-family: Open Sans, system-ui, sans-serif;
+    font-family: 'Open Sans', 'Alice', system-ui;
+    font-size: 18px;
   }
-} */
+}
 
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
+}
+
+main, .site-header {
   @apply pl-10 pr-10 pt-5;
 }
 
-h1, h2, h3 {
-  @apply font-headers text-black;
+footer {
+  background-color: rgb(var(--background-menus-rgb));
+}
+
+h1, h2, h3, .h1, .h2, .h3 {
+  @apply text-black;
   font-weight: 400;
 }
 
-h1 {
-  font-size: 4.88889rem;
-  line-height: 4.88889rem;
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
+  font-family: 'Alice', 'Open Sans';
 }
 
-h2 {
-  font-size: 3.55556rem;
-  line-height: 3.55556rem;
-  letter-spacing: 0.17778rem;
+h1, .h1 {
+  font-size: 4.9rem;
+  line-height: 4.9rem;
 }
 
-h3 {
-  font-size: 2.33333rem;
+h2, .h2 {
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  letter-spacing: 0.17rem;
 }
 
-h4 {
-  font-size: 1.77778rem;
+h3, .h3 {
+  font-size: 2.3rem;
 }
 
-h5 {
-  font-size: 1.33333rem;
-  letter-spacing: 0.06667rem;
+h4, .h4 {
+  font-size: 1.77rem;
+}
+
+h5, .h5 {
+  font-size: 1.33rem;
+  letter-spacing: 0.07rem;
+}
+
+a {
+  cursor: pointer;
+  color: rgb(var(--links-rgb));
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /* NavBar */
-.header-nav > li {
-  @apply font-sans text-xl ml-[42px] font-normal;
+nav li > a {
+  color: rgb(var(--foreground-rgb));
+}
+
+nav li > a:hover {
+  text-decoration: none;
+}
+
+.horizontal-menu > li {
+  font-family: 'Open Sans';
+  font-size: 1.25rem;
+  letter-spacing: 0;
+  font-weight: 400;
+  margin-left: 35px;
+  line-height: 1.75rem;
+  text-align: center;
+}
+
+.horizontal-menu > li:first-child {
+  margin-left: 0px;
+}
+
+.vertical-menu
+{
+  background-color: rgb(var(--background-menus-rgb));
 }

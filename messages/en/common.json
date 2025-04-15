@@ -1,20 +1,20 @@
 {
   "mainName": "Junge Stimmen",
   "menu": {
-    "home": "Главная",
-    "schedule": "Афиша",
-    "about": "О коллективе",
-    "video": "Видео",
-    "audio": "Аудио",
-    "gallery": "Фотогалерея",
-    "contactUs": "Контакты"
+    "home": "Home",
+    "schedule": "Events",
+    "about": "About Us",
+    "video": "Video",
+    "audio": "Audio",
+    "gallery": "Photo",
+    "contactUs": "Contacts"
   },
   "footer": {
     "contacts": {
       "title": "Контактная информация",
-      "name": "Руководитель\nЕрастова Елена Васильевна",
-      "phone": "8-905-86-40-555",
-      "email": "eve2a7@mail.ru"
+      "position": "Руководитель",
+      "name": "Ерастова Елена Васильевна",
+      "email": "admin@jungestimmen.ru"
     },
     "partners": {
       "title": "Наши партнеры",
@@ -24,7 +24,7 @@
     },
     "social": {
       "title": "Мы в социальных сетях",
-      "vk": "Вконтакте",
+      "vk": "VK",
       "youtube": "YouTube"
     }
   },
