@@ -51,10 +51,18 @@ export default function IndexPage() {
                 </picture>
                 <article className="text-center md:text-left pt-4 pr-4 col-start-1">{t("directorDescription")}</article>
             </div>
-
-            <div className="py-4 text-center md:text-left">
-                <p>{t("audioDescription")}</p>
-                <LinkButton text={t("buttonAudio")} href="/audio"/>
+            <div className="py-4 text-center md:text-left md:grid grid-cols-2">
+                <p className="col-start-1 row-start-2 py-4">{t("audioDescription")}</p>
+                <LinkButton text={t("buttonAudio")} href="/audio" className="col-start-1 row-start-1"/>
+                <picture className="hidden md:block mx-auto py-4 col-start-2 row-span-3">
+                    <Image
+                        src="/logo_background.svg"
+                        width={499}
+                        height={644}
+                        alt={t("directorTitle")}
+                        className="mx-auto"
+                    />
+                </picture>
             </div>
         </main>
     );
