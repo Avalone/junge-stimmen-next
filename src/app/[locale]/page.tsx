@@ -17,24 +17,12 @@ export default function IndexPage() {
                     alt={t("title")}
                     width={897}
                     height={907}
+                    className="mx-auto"
                 />
             </picture>
-            <article className="text-center">{t("choirDescription")}</article>
+            <article className="text-center md:text-left">{t("choirDescription")}</article>
             <div>
                 <LinkButton text={t("buttonEvents")} href="/schedule"/>
-            </div>
-            <div className="px-0 py-4 my-0 text-center md:text-left">
-                <p className="h5 md:text-5xl">{t("directorTitle")}</p>
-                <p className="h5 md:text-5xl">{t("directorName")}</p>
-                <picture className="block py-4">
-                    <Image
-                        src="/elena_vasil_1.png"
-                        width={499}
-                        height={644}
-                        alt={t("directorTitle")}
-                    />
-                </picture>
-                <article className="text-center">{t("directorDescription")}</article>
             </div>
             <div>
                 <div className="my-4">
@@ -44,10 +32,27 @@ export default function IndexPage() {
                             referrerPolicy="strict-origin-when-cross-origin" allowFullScreen
                             className="block mx-auto"></iframe>
                 </div>
-                <article className="text-center">{t("videoDescription")}</article>
+                <article className="text-center md:text-left">{t("videoDescription")}</article>
                 <LinkButton text={t("buttonVideo")} href="/video"/>
             </div>
-            <div className="py-4 text-center">
+            <div className="px-0 py-4 my-0 text-center md:text-left md:grid grid-cols-2">
+                <div className="row-start-1">
+                    <p className="h5 md:text-5xl col-start-1">{t("directorTitle")}</p>
+                    <p className="h5 md:text-5xl col-start-1">{t("directorName")}</p>
+                </div>
+                <picture className="block mx-auto py-4 col-start-2 row-span-3">
+                    <Image
+                        src="/elena_vasil_1.png"
+                        width={499}
+                        height={644}
+                        alt={t("directorTitle")}
+                        className="mx-auto"
+                    />
+                </picture>
+                <article className="text-center md:text-left pt-4 pr-4 col-start-1">{t("directorDescription")}</article>
+            </div>
+
+            <div className="py-4 text-center md:text-left">
                 <p>{t("audioDescription")}</p>
                 <LinkButton text={t("buttonAudio")} href="/audio"/>
             </div>
