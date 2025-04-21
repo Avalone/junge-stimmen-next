@@ -30,7 +30,7 @@ body {
 }
 
 main, .site-header {
-  @apply pl-10 pr-10 pt-5;
+  @apply px-6 pt-5;
 }
 
 footer {
@@ -75,8 +75,13 @@ a {
   color: rgb(var(--links-rgb));
 }
 
-a:hover {
+a:not(.no-underline):hover {
   text-decoration: underline;
+}
+
+button {
+  color: rgb(var(--foreground-rgb));
+  text-decoration: none;
 }
 
 /* NavBar */

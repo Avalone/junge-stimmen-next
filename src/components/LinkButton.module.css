@@ -1,0 +1,3 @@
+.link-button {
+    @apply block m-auto mt-4 p-4 bg-cyan-400 bg-opacity-70 rounded-3xl items-center gap-2.5 no-underline
+}

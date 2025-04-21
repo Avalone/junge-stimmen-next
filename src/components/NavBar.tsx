@@ -44,11 +44,11 @@ export default function NavBar() {
                                 <p>{t("menu.audio")}</p>
                             </Link>
                         </li>
-                        <li>
-                            <Link href="/gallery">
-                                <p>{t("menu.gallery")}</p>
-                            </Link>
-                        </li>
+                        {/*<li>*/}
+                        {/*    <Link href="/gallery">*/}
+                        {/*        <p>{t("menu.gallery")}</p>*/}
+                        {/*    </Link>*/}
+                        {/*</li>*/}
                     </ul>
                 </nav>
                 <div className="flex w-full justify-end items-center">
