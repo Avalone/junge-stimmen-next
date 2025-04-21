@@ -3,9 +3,6 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <html>
-      <body>
-        
         <main className="text-center">
           <Image
             className="m-auto mt-5"
@@ -17,7 +14,5 @@ export default function NotFound() {
           <h4>page not found</h4>
           <Link href="/" className="underline">Back to main page</Link>
         </main>
-      </body>
-    </html>
   );
 }
