@@ -27,6 +27,11 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
+  line-height: 1.5rem;
+}
+
+p {
+  padding-top: 0.8rem;
 }
 
 main, .site-header {
