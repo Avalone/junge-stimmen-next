@@ -30,12 +30,12 @@ body {
   line-height: 1.5rem;
 }
 
-p {
+main p {
   padding-top: 0.8rem;
 }
 
 main, .site-header {
-  @apply px-6 pt-5;
+  @apply px-6 md:px-12 pt-5;
 }
 
 footer {
