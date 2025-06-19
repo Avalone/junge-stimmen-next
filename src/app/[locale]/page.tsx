@@ -3,7 +3,7 @@ import Image from "next/image";
 import LinkButton from "@/components/LinkButton";
 import YoutubePreview from "@/components/YoutubePreview";
 
-export function renderAwardList(awards: string[]) {
+function renderAwardList(awards: string[]) {
     console.log(awards);
 
     return (
@@ -17,7 +17,7 @@ export function renderAwardList(awards: string[]) {
     );
 }
 
-export function renderParagraphs(resource: string) {
+function renderParagraphs(resource: string) {
     const paragraphs = resource.split("\n");
 
     return (
@@ -76,7 +76,8 @@ export default function IndexPage() {
                 </section>
             </article>
             <section className="mt-14">
-                <YoutubePreview videoId="zFpVffVkvCc" title="Junge Stimmen - Cantate Domino" className="my-4 max-w-3xl mx-auto" />
+                <YoutubePreview videoId="zFpVffVkvCc" title="Junge Stimmen - Cantate Domino"
+                                className="my-4 max-w-3xl mx-auto"/>
                 <LinkButton className="my-4 md:my-14" text={t("buttonVideo")} href="/video"/>
             </section>
             <section className="mt-6">
