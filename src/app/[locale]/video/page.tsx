@@ -4,7 +4,7 @@ import YoutubePreview from "@/components/YoutubePreview";
 
 export default async function VideoPage() {
     const t = await getTranslations('video');
-    const playlistId = 'PLmNS_4_I60wPMT0WMTTTnd9xlkd3JsSaYa';
+    const playlistId = 'PLmNS_4_I60wPMT0WMTTTnd9xlkd3JsSaY';
     const videosInfo = await fetchYoutubePlaylistVideoIds(playlistId);
 
     return (
