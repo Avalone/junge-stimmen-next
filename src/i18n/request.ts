@@ -14,12 +14,14 @@ async function importMessages(locale: string) {
         case 'ru':
             return {
                 'common': (await import('../messages/ru/common.json')).default,
-                'home': (await import('../messages/ru/home.json')).default
+                'home': (await import('../messages/ru/home.json')).default,
+                'video': (await import('../messages/ru/video.json')).default
             };
         case 'en':
             return {
                 'common': (await import('../messages/en/common.json')).default,
-                'home': (await import('../messages/en/home.json')).default
+                'home': (await import('../messages/en/home.json')).default,
+                'video': (await import('../messages/en/video.json')).default
             };
         default:
             throw new Error(`Unknown locale: ${locale}`);

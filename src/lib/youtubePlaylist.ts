@@ -17,7 +17,7 @@ interface PlaylistItemResponse {
     };
 }
 
-interface PlaylistItemResult {
+export interface PlaylistItemResult {
     videoId: string;
     title: string;
     description: string;
@@ -54,6 +54,6 @@ export async function fetchYoutubePlaylistVideoIds(playlistId: string): Promise<
         return videosInfo;
     } catch (error) {
         console.error('Error fetching YouTube playlist:', error);
-        throw new Error('Failed to fetch playlist');
+        return [];
     }
 }

@@ -4,7 +4,6 @@ import LinkButton from "@/components/LinkButton";
 import YoutubePreview from "@/components/YoutubePreview";
 
 function renderAwardList(awards: string[]) {
-    console.log(awards);
 
     return (
         <ul className="list-['—'] pl-6">
