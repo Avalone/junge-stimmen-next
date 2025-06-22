@@ -59,8 +59,12 @@ export default function NavBar() {
                         <LocaleSwitcher/>
                     </div>
                     <div className="flex shrink-0">
-                        <Image src="/videosquare.svg" alt="youtube" width={24} height={24}/>
-                        <Image src="/logo_vk.svg" alt="vk" width={24} height={24}/>
+                        <a href="https://www.youtube.com/@JungeStimmenPerm" target="_blank">
+                            <Image src="/videosquare.svg" alt="youtube" width={24} height={24}/>
+                        </a>
+                        <a href="https://vk.com/club35045690" target="_blank">
+                            <Image src="/logo_vk.svg" alt="vk" width={24} height={24}/>
+                        </a>
                     </div>
                 </div>
             </div>
