@@ -12,7 +12,7 @@ export default function LinkButton(props: LinkButtonProps) {
     const className = [styles["link-button"], props.className].filter(Boolean).join(' ');
 
     return (
-        <Link href="/schedule" className="no-underline">
+        <Link href={props.href} className="no-underline">
             <button className={className} >
                 {props.text}
             </button>
