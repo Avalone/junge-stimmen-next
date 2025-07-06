@@ -24,16 +24,6 @@ export default function NavBar() {
                                 <p>{t("menu.home")}</p>
                             </Link>
                         </li>
-                        {/*<li>*/}
-                        {/*    <Link href="/schedule">*/}
-                        {/*        <p>{t("menu.schedule")}</p>*/}
-                        {/*    </Link>*/}
-                        {/*</li>*/}
-                        {/*<li>*/}
-                        {/*    <Link href="/about">*/}
-                        {/*        <p>{t("menu.about")}</p>*/}
-                        {/*    </Link>*/}
-                        {/*</li>*/}
                         <li>
                             <Link href="/video">
                                 <p>{t("menu.video")}</p>
@@ -44,11 +34,6 @@ export default function NavBar() {
                                 <p>{t("menu.audio")}</p>
                             </Link>
                         </li>
-                        {/*<li>*/}
-                        {/*    <Link href="/gallery">*/}
-                        {/*        <p>{t("menu.gallery")}</p>*/}
-                        {/*    </Link>*/}
-                        {/*</li>*/}
                     </ul>
                 </nav>
                 <div className="flex w-full justify-end items-center">
