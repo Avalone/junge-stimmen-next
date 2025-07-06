@@ -25,16 +25,6 @@ export default function NavBar() {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/schedule">
-                                <p>{t("menu.schedule")}</p>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/about">
-                                <p>{t("menu.about")}</p>
-                            </Link>
-                        </li>
-                        <li>
                             <Link href="/video">
                                 <p>{t("menu.video")}</p>
                             </Link>
@@ -44,11 +34,6 @@ export default function NavBar() {
                                 <p>{t("menu.audio")}</p>
                             </Link>
                         </li>
-                        {/*<li>*/}
-                        {/*    <Link href="/gallery">*/}
-                        {/*        <p>{t("menu.gallery")}</p>*/}
-                        {/*    </Link>*/}
-                        {/*</li>*/}
                     </ul>
                 </nav>
                 <div className="flex w-full justify-end items-center">
@@ -59,8 +44,12 @@ export default function NavBar() {
                         <LocaleSwitcher/>
                     </div>
                     <div className="flex shrink-0">
-                        <Image src="/videosquare.svg" alt="youtube" width={24} height={24}/>
-                        <Image src="/logo_vk.svg" alt="vk" width={24} height={24}/>
+                        <a href="https://www.youtube.com/@JungeStimmenPerm" target="_blank">
+                            <Image src="/videosquare.svg" alt="youtube" width={24} height={24}/>
+                        </a>
+                        <a href="https://vk.com/club35045690" target="_blank">
+                            <Image src="/logo_vk.svg" alt="vk" width={24} height={24}/>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -68,11 +57,11 @@ export default function NavBar() {
                 <nav className="vertical-menu lg:hidden block flex-wrap w-full mt-4">
                     <ul className="flex flex-col items-center p-4 gap-2">
                         <li><Link href="/" onClick={toggleMenu}>{t("menu.home")}</Link></li>
-                        <li><Link href="/schedule" onClick={toggleMenu}>{t("menu.schedule")}</Link></li>
-                        <li><Link href="/about" onClick={toggleMenu}>{t("menu.about")}</Link></li>
+                        {/*<li><Link href="/schedule" onClick={toggleMenu}>{t("menu.schedule")}</Link></li>*/}
+                        {/*<li><Link href="/about" onClick={toggleMenu}>{t("menu.about")}</Link></li>*/}
                         <li><Link href="/video" onClick={toggleMenu}>{t("menu.video")}</Link></li>
                         <li><Link href="/audio" onClick={toggleMenu}>{t("menu.audio")}</Link></li>
-                        <li><Link href="/gallery" onClick={toggleMenu}>{t("menu.gallery")}</Link></li>
+                        {/*<li><Link href="/gallery" onClick={toggleMenu}>{t("menu.gallery")}</Link></li>*/}
                     </ul>
                 </nav>
             )}

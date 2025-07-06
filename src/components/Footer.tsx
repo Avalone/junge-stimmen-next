@@ -33,15 +33,15 @@ export default function Footer() {
                     <ul>
                         <li className="mb-2">
                             <p>{t("partners.pstu")}</p>
-                            <a href="https://pstu.ru">pstu.ru</a>
+                            <a href="https://pstu.ru" target="_blank">pstu.ru</a>
                         </li>
                         <li className="mb-2">
                             <p>{t("partners.dom")}</p>
-                            <a href="https://vk.com/prostranstvo_dom">vk.com/prostranstvo_dom</a>
+                            <a href="https://vk.com/prostranstvo_dom" target="_blank">vk.com/prostranstvo_dom</a>
                         </li>
                         <li>
                             <p>{t("partners.library")}</p>
-                            <a href="https://vk.com/librarypushkin">vk.com/librarypushkin</a>
+                            <a href="https://vk.com/librarypushkin" target="_blank">vk.com/librarypushkin</a>
                         </li>
                     </ul>
                 </section>
@@ -49,11 +49,11 @@ export default function Footer() {
                 <section className="w-full md:w-1/4 mt-4 sm:mt-0">
                     <p className="mb-4">{t("social.title")}</p>
                     <div className="mb-4">
-                        <a href="#" className="flex items-center justify-center space-x-8 mt-2">
+                        <a href="https://vk.com/club35045690" target="_blank" className="flex items-center justify-center space-x-8 mt-2">
                             <Image src="/logo_vk.svg" alt="vk" width={24} height={24} />
                             <p className="w-20">{t("social.vk")}</p>
                         </a>
-                        <a href="#" className="flex items-center justify-center space-x-8  mt-2">
+                        <a href="https://www.youtube.com/@JungeStimmenPerm" target="_blank" className="flex items-center justify-center space-x-8  mt-2">
                             <Image src="/videosquare.svg" alt="youtube" width={24} height={24} />
                             <p className="w-20">{t("social.youtube")}</p>
                         </a>

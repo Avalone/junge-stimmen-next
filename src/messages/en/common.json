@@ -11,19 +11,19 @@
   },
   "footer": {
     "contacts": {
-      "title": "Контактная информация",
-      "position": "Руководитель",
-      "name": "Ерастова Елена Васильевна",
-      "email": "admin@jungestimmen.ru"
+      "title": "Contact Information",
+      "position": "Director",
+      "name": "Elena Vasilyevna Yerastova",
+      "email": "director@junge-stimmen.ru"
     },
     "partners": {
-      "title": "Наши партнеры",
-      "pstu": "Пермский Политех",
-      "dom": "Пространство ДОМ",
-      "library": "Библиотека им. Пушкина"
+      "title": "Our Partners",
+      "pstu": "Perm State Technical University",
+      "dom": "DOM Space",
+      "library": "Pushkin Library"
     },
     "social": {
-      "title": "Мы в социальных сетях",
+      "title": "We are on social media",
       "vk": "VK",
       "youtube": "YouTube"
     }
