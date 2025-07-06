@@ -57,11 +57,11 @@ export default function NavBar() {
                 <nav className="vertical-menu lg:hidden block flex-wrap w-full mt-4">
                     <ul className="flex flex-col items-center p-4 gap-2">
                         <li><Link href="/" onClick={toggleMenu}>{t("menu.home")}</Link></li>
-                        <li><Link href="/schedule" onClick={toggleMenu}>{t("menu.schedule")}</Link></li>
-                        <li><Link href="/about" onClick={toggleMenu}>{t("menu.about")}</Link></li>
+                        {/*<li><Link href="/schedule" onClick={toggleMenu}>{t("menu.schedule")}</Link></li>*/}
+                        {/*<li><Link href="/about" onClick={toggleMenu}>{t("menu.about")}</Link></li>*/}
                         <li><Link href="/video" onClick={toggleMenu}>{t("menu.video")}</Link></li>
                         <li><Link href="/audio" onClick={toggleMenu}>{t("menu.audio")}</Link></li>
-                        <li><Link href="/gallery" onClick={toggleMenu}>{t("menu.gallery")}</Link></li>
+                        {/*<li><Link href="/gallery" onClick={toggleMenu}>{t("menu.gallery")}</Link></li>*/}
                     </ul>
                 </nav>
             )}
