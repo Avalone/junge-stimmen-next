@@ -33,21 +33,21 @@ import {useTranslations} from "next-intl";
 //         "2085483756"
 //     ]
 
-const getHeight = () => {
-    return Math.max(Math.round(window.innerHeight * 0.7), 350);
-};
-
 export default function SchedulePage() {
     const t = useTranslations('audio');
     const iframeRef = useRef<HTMLIFrameElement | null>(null);
-    const [iframeHeight, setIframeHeight] = useState(getHeight());
-
-    const setHeight = () => {
-        setIframeHeight(getHeight());
-    };
+    const [iframeHeight, setIframeHeight] = useState(550);
 
     useEffect(() => {
-        //setHeight();
+        const getHeight = () => {
+            return Math.max(Math.round(window.innerHeight * 0.7), 350);
+        };
+
+        const setHeight = () => {
+            setIframeHeight(getHeight());
+        };
+
+        setHeight();
         window.addEventListener('resize', setHeight);
     }, []);
 
