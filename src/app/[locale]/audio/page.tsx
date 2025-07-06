@@ -33,22 +33,25 @@ import {useTranslations} from "next-intl";
 //         "2085483756"
 //     ]
 
+const DEFAULT_PLAYER_HEIGHT = 550;
+const MIN_PLAYER_HEIGHT = 350;
+const PLAYER_HEIGHT_RATIO = 0.7;
+
+
 export default function SchedulePage() {
     const t = useTranslations('audio');
     const iframeRef = useRef<HTMLIFrameElement | null>(null);
-    const [iframeHeight, setIframeHeight] = useState(550);
+    const [iframeHeight, setIframeHeight] = useState(DEFAULT_PLAYER_HEIGHT);
 
     useEffect(() => {
-        const getHeight = () => {
-            return Math.max(Math.round(window.innerHeight * 0.7), 350);
+        const updateIframeHeight = () => {
+            const screenHeight = window.innerHeight;
+            const newHeight = Math.max(Math.round(screenHeight * PLAYER_HEIGHT_RATIO), MIN_PLAYER_HEIGHT);
+            setIframeHeight(newHeight);
         };
 
-        const setHeight = () => {
-            setIframeHeight(getHeight());
-        };
-
-        setHeight();
-        window.addEventListener('resize', setHeight);
+        updateIframeHeight();
+        window.addEventListener('resize', updateIframeHeight);
     }, []);
 
     return (
