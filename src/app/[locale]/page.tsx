@@ -53,7 +53,7 @@ export default function IndexPage() {
                     {
                         renderAwardList(t("choirAwards.items").split("||"))
                     }
-                    <LinkButton className="my-4 md:my-14" text={t("buttonEvents")} href="/schedule"/>
+                    <LinkButton className="my-4 md:my-14" text={t("buttonEvents")} href="https://vk.com/club35045690" openInNewTab/>
                 </section>
             </article>
             <article className="px-0 py-4 my-0 text-center md:text-left md:grid grid-cols-2">
